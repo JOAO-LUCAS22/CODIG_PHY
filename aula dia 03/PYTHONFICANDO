@@ -1,0 +1,33 @@
+
+import os
+os.system("cls")
+
+print("""
+Código: \t\t Prato: \t\t preço:
+      
+  (1) \t\t\t Picanha \t\t 24,99 R$
+      
+  (2) \t\t\t Lasanha \t\t 19,99 R$
+      
+  (3) \t\t\t Strogonoff \t\t 17,99 R$
+      
+  (4) \t\t\t Bife acebolado \t 14,99 R$
+      
+  (5) \t\t\t Pão com ovo \t\t 4,99 R$
+""")
+codigo = int(input("Escolha uma opção do menu:\n"))
+
+match codigo:
+    case 1:
+        print("Picanha 24,99 R$")
+    case 2:
+        print("Lasanha 19,99 R$")
+    case 3:
+        print("Strogonoff 17,99 R$")
+    case 4:
+        print("Bife acebolado 14,99 R$")
+    case 5:
+        print("Pão com ovo 4,99 R$")
+    case _:
+        print("Não está no menu (you cego man)")
+print("Obrigado")
